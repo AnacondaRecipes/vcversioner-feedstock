@@ -11,12 +11,12 @@ source:
 
 build:
   number: 0
-  script: pip install .
+  script: ${PYTHON} setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
-  build:
+  host:
     - python
-    - pip
+    - setuptools
   run:
     - python
 
@@ -34,3 +34,4 @@ extra:
     - anguslees
     - minrk
     - ocefpaf
+    - mingwandroid
