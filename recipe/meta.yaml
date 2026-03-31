@@ -10,8 +10,8 @@ source:
   md5: aab6ef5e0cf8614a1b1140ed5b7f107d
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  script: pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vv
 
 requirements:
   host:
